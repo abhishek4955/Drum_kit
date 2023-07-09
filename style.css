@@ -1,0 +1,117 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    background: #283149;
+}
+
+/* Heading Styles */
+#heading {
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 4px 4px 0 #FF0090;
+    font-size: 90px;
+}
+
+/* Drums Styles */
+.drums {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.drums button {
+    outline: none;
+    border: 12px solid #404B69;
+    font-size: 80px;
+    font-weight: 1000;
+    color: #da0463;
+    text-shadow: 3px 0 aliceblue;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+/* Drum Button Annimations  */
+.drums button:hover {
+    transform: scale(1.1);
+}
+
+.drums button:active {
+    transform: scale(0.9);
+}
+
+/* Drum Buttons Styles */
+.a {
+    background-image: url("./assets/drum-1.png");
+    background-repeat: no-repeat;
+}
+
+.w {
+    background-image: url("./assets/drum-2.png");
+    background-repeat: no-repeat;
+}
+
+.s {
+    background-image: url("./assets/drum-3.png");
+    background-repeat: no-repeat;
+}
+
+.d {
+    background-image: url("./assets/drum-4.png");
+    background-repeat: no-repeat;
+}
+
+.j {
+    background-image: url("./assets/Drum-5.png");
+    background-repeat: no-repeat;
+}
+
+.k {
+    background-image: url("./assets/drum-6.png");
+    background-repeat: no-repeat;
+}
+
+.l {
+    background-image: url("./assets/drum-7.png");
+    background-repeat: no-repeat;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* Heading Styles */
+h1 {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 100;
+    color: aliceblue;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens or mobile devices */
+    #heading {
+        font-size: 60px;
+    }
+    
+    .drums {
+        margin-top: 100px;
+    }
+    
+    .drums button {
+        font-size: 40px;
+        width: 150px;
+        height: 150px;
+    }
+    
+    footer {
+        margin-top: 40px;
+    }
+}
