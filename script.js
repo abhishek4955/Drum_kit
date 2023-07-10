@@ -9,9 +9,17 @@ window.onload = function() {
       playDrumSound(buttonInnerHTML);
     });
   }
+
+  // Add keyboard event listeners for specific keys
+  window.addEventListener("keyup", function(event) {
+    var key = event.key.toLowerCase();
+    if (key === "w" || key === "a" || key === "s" || key === "d" || key === "j" || key === "k" || key === "l") {
+      playDrumSound(key);
+    }
+  });
 };
 
-  // Function to play Drum Sounds
+// Function to play Drum Sounds
 function playDrumSound(key) {
   var audio = new Audio();
   
